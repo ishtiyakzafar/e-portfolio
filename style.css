@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+p {
+  color: #777;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/* HEADER */
+.header {
+  background: #5f27cd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.navbar h1 {
+  font-size: 20px;
+  color: white;
+}
+
+.navbar .menu ul {
+  display: flex;
+}
+
+.navbar .menu ul li {
+  list-style: none;
+}
+
+.navbar .menu ul li a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.navbar .menu ul li a:hover {
+  color: tomato;
+}
+
+/* ******************HOME PAGE********************* */
+
+.home {
+  background: #f1f2f6;
+}
+
+.home_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+}
+
+.profile_pic img {
+  width: 500px;
+  height: 500px;
+  border-radius: 68% 32% 47% 53% / 37% 38% 62% 63%;
+  object-fit: cover;
+}
+
+.info h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+.info h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.info a {
+  text-decoration: none;
+  padding: 12px 20px;
+  background: #5f27cd;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.info a:hover {
+  opacity: 0.9;
+}
+
+/* ******************ABOUT PAGE********************* */
+
+.page_container {
+  background: #f1f2f6;
+  min-height: 90vh;
+  padding-bottom: 50px;
+}
+
+.page_container h1 {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 25px;
+}
+
+.about_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.about_pic img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.about_des {
+  max-width: 50%;
+}
+
+/* ******************Qualification PAGE********************* */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+td li {
+  color: #777;
+  padding-bottom: 15px;
+}
+
+td p {
+  display: none;
+}
+
+.qua_img {
+  text-align: center;
+}
+
+.qua_img img {
+  width: 80%;
+  padding-top: 50px;
+}
+
+/* FUTURE GOAL */
+
+.future_goal {
+  display: flex;
+  align-items: center;
+}
+
+.future_img {
+  text-align: center;
+}
+
+.future_img img {
+  width: 60%;
+}
+
+.future_goal_content p {
+  color: #777;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.future_goal_content ul li {
+  color: #777;
+  padding-bottom: 15px;
+}
+
+/* ====================media query=============== */
+
+@media (max-width: 1200px) {
+  .profile_pic img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .about_pic img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1150px) {}
+
+@media (max-width: 992px) {
+  .info h2 {
+    font-size: 30px;
+  }
+
+  .profile_pic img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about_content {
+    display: block;
+    text-align: center;
+  }
+
+  .about_des {
+    max-width: 100%;
+  }
+
+  .about_pic img {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    padding-top: 50px;
+  }
+
+  .home_content {
+    display: block;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+
+  .profile_pic {
+    padding-top: 50px;
+  }
+
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar .menu ul {
+    margin-top: 5px;
+    justify-content: center;
+  }
+
+  .navbar .menu ul li a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .profile_pic img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .future_goal {
+    display: block;
+  }
+
+  .future_goal_content {
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+  th {
+    display: none;
+  }
+
+  td p {
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .page_container h1 {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile_pic img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .future_img img {
+    width: 100%;
+  }
+
+  .qua_img img {
+    width: 100%;
+  }
+
+  .about_pic img {
+    width: 100%;
+    height: 100%;
+  }
+}
